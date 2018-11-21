@@ -30,8 +30,6 @@ class URLEncoding: ParameterEncoding {
 
             let queryItems = keys.map { key -> URLQueryItem in
                 return createQueryParameter(parameters: parameters, key: key)
-//                guard let value = parameters[key] as? String else { return URLQueryItem(name: key, value: nil) }
-//                return URLQueryItem(name: key, value: value)
             }
 
             components.queryItems = queryItems
